@@ -23,12 +23,7 @@ SOFTWARE.
 */
 
 var fs=require('fs');
-var I2c = null;
-try {
-    I2c = require('@abandonware/i2c');
-} catch(err) {
-    I2c = require('i2c');
-}
+var I2c = require('color-sensor-js/lib/i2c.js');
 
 var MAX_TEMP_CONVERSION     = 50;   // milliseconds
 var MAX_HUMI_CONVERSION     = 16;   // ms
@@ -46,8 +41,8 @@ var htu21d = function (options) {
     if (this.config.device === undefined) {
         this.config.device = '/dev/i2c-1'
     }
-    this.i2c = new I2c(HTU21D_I2CADDR,
-        { device: this.config.device }
+    this.i2c = new I2c({ address: HTU21D_I2CADDR,
+         device: this.config.device }
     );
 };
 

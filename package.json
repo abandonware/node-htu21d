@@ -1,5 +1,5 @@
 {
-  "name": "htu21d-i2c",
+  "name": "@abandonware/htu21d-i2c",
   "version": "0.1.0",
   "description": "Read temperature and humidity from the HTU21D-F sensor",
   "main": "index.js",
@@ -16,10 +16,10 @@
   "author": "bbx10node <bbx10node@gmail.com> (http://x10linux.blogspot.com/)",
   "repository": {
     "type": "git",
-    "url": "http://github.com/bbx10/node-htu21d.git"
+    "url": "http://github.com/abandonware/node-htu21d.git"
   },
   "license": "MIT",
-  "homepage": "http://github.com/bbx10/node-htu21d.git",
+  "homepage": "http://github.com/abandonware/node-htu21d.git",
   "dependencies": {
     "@abandonware/i2c": ">=0.2.4-1",
     "color-sensor-js": "0.0.11"

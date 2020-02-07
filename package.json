@@ -1,6 +1,6 @@
 {
   "name": "@abandonware/htu21d-i2c",
-  "version": "0.1.0",
+  "version": "0.1.1-0",
   "description": "Read temperature and humidity from the HTU21D-F sensor",
   "main": "index.js",
   "scripts": {
